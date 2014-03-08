@@ -1,6 +1,6 @@
 $title=Documentation
 
-Luawa is a web application framework based on the Nginx Lua module. It provides lots of useful web-specific features as well as a lightweight user & permissions system. This documentation is a work in progress and relates to the latest Luawa, `0.9.3-unreleased`.
+Luawa is a web application framework based on the Nginx Lua module. It provides lots of useful web-specific features as well as a lightweight user & permissions system. This documentation is a work in progress and relates to Luawa `v0.9.4`.
 
 [Main website](http://luawa.com) & [install documentation](/install)
 
