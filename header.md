@@ -24,6 +24,11 @@ Sets a HTTP header of key => value, returns nil.
 Returns the relevant header or nil.
 
 
+###header:getHeaders()
+
+Returns a table of all headers.
+
+
 ###header:setCookie( key, value, expire, path, domain, secure, httponly )
 
 + **key**: key of the cookie to set
@@ -42,6 +47,11 @@ Sets a cookie, returns nil.
 **key**: key of the cookie to get
 
 Returns the relevant cookie or nil.
+
+
+###header:getCookies()
+
+Returns a table of all the cookies.
 
 
 ###header:deleteCookie( key )
