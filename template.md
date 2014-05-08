@@ -1,6 +1,15 @@
 The template module can allow you to combine Lua with HTML to form [.lhtml pages](/lhtml).
 
-###template:set( key, value, api )
+## Configuration
+
+`config.template` options:
+
++ `config.template.minimize` - currently broken! Will/should automatically minimize html
+
+
+## API Reference
+
+### template:set(key, value, api)
 
 + **key**: key of data to set
 + **value**: value of data
@@ -9,7 +18,7 @@ The template module can allow you to combine Lua with HTML to form [.lhtml pages
 Sets template data.
 
 
-###template:add( key, values, api )
+### template:add(key, values, api)
 
 + **key**: key of existing data (must be table)
 + **values**: table of data to add
@@ -18,26 +27,26 @@ Sets template data.
 Adds values to a template data table.
 
 
-###template:get( key )
+### template:get(key)
 
 + **key**: key of the data to return
 
 Returns table data.
 
 
-###template:clear()
+### template:clear()
 
 Clears table data.
 
 
-###template:put( content )
+### template:put(content)
 
 + **content**: content to write
 
 Writes content out in-place.
 
 
-###template:load( file )
+### template:load(file)
 
 + **file**: name of file
 

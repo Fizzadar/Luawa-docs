@@ -3,4 +3,4 @@ Luawa is built on top of the [lua-nginx-module](https://github.com/chaoslawful/l
 + **Template, session and user** require Lua-cjson
 + **Database** requires an install of MySQL to connect to
 
-More info coming soon. Example app: [yummymarks](https://github.com/Fizzadar/yummymarks)
+More info coming soon. Example apps: [yummymarks](https://github.com/Fizzadar/yummymarks) and [Oxypanel](http://github.com/Oxygem/Oxypanel).

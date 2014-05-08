@@ -1,4 +1,18 @@
-The database module only works with MySQL at this time. Eventually I would like to move-to/offer-alongside PostgreSQL.
+The database module provides a very minimal wrapper over pure SQL queries. It only works with MySQL at this time, but eventually I would like to have PostgreSQL as an option also.
+
+## Configuration
+
+`config.database` options:
+
++ `config.database.driver` - only 'mysql' available currently
++ `config.database.host` - database hostname
++ `config.database.port` - database port
++ `config.database.name` - actual database name
++ `config.database.user` - user to connect as
++ `config.database.pass` - users password
+
+
+## API Reference
 
 All these functions (except escape) return in the format `table, error`.
 
@@ -6,7 +20,7 @@ All these functions (except escape) return in the format `table, error`.
 + **error**: string if error or nil
 
 
-###database:select( table, fields, wheres, options )
+### database:select(table, fields, wheres, options)
 
 + **table**: name of table
 + **fields**: array of fields to select (non-table values select all)
@@ -18,20 +32,20 @@ All these functions (except escape) return in the format `table, error`.
 	- **group** (for `GROUP BY`)
 
 
-###database:delete( table, wheres )
+### database:delete(table, wheres)
 
 + **table**: name of table
 + **wheres**: table of `field = match`, sub-tables matched with `OR`
 
 
-###database:update( table, values, wheres )
+### database:update(table, values, wheres)
 
 + **table**: name of table
 + **values**: table of `field = new_value`
 + **wheres**: table of `field = match`, sub-tables matched with `OR`
 
 
-###datbase:insert( table, fields, values, options )
+### datbase:insert(table, fields, values, options)
 
 + **table**: name of table
 + **fields**: array of fields to insert
@@ -41,19 +55,19 @@ All these functions (except escape) return in the format `table, error`.
 	- **delayed**: true/false
 
 
-###database:search( table, search\_fields, fetch\_fields, query )
+### database:search(table, search\_fields, fetch\_fields, query)
 
 Not currently implemented!
 
 
-###database:query( sql )
+### database:query(sql)
 
 + **sql**: SQL string
 
 Runs the SQL query.
 
 
-###database:escape( data )
+### database:escape(data)
 
 + **data**: table of data
 

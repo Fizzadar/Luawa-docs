@@ -1,7 +1,16 @@
-###debug:message( string )
+## Configuration
 
-###debug:error( string )
+`config.debug` options:
 
-###debug:query( string )
++ `config.debug.enabled` - enable/disable the debugger
 
-###debug:access( message, request )
+
+## API Reference
+
+### debug:message(string)
+
+### debug:error(string)
+
+### debug:query(string)
+
+### debug:access(message, request)
